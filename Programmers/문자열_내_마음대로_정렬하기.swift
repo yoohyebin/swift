@@ -5,10 +5,10 @@
 
 //Solution 1
 func solution(_ strings:[String], _ n:Int) -> [String] {
-    var index = strings[0].index(strings[0].startIndex, offsetBy: n)
+    var index = strings[0].index(strings[0].startIndex, offsetBy: n)    //n번째 글짜 인덱스 구하기
 
     return strings.sorted(by: {(s1: String, s2: String) -> Bool in
-        s1[index] == s2[index] ? s1 < s2 : s1[index] < s2[index]
+        s1[index] == s2[index] ? s1 < s2 : s1[index] < s2[index]        //s1과 s2의 n번째 글자가 같다면 s1과 s2를 비교하여 오름차순 정렬, 다르다면 각 n번째 글자를 비교하여 오름차순 정렬
     })
 }
 
