@@ -7,6 +7,7 @@
   단, 금액이 부족하지 않으면 0을 return 하세요.
 */
 
+
 import Foundation
 
 //Solution 1
