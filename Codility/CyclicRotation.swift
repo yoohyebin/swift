@@ -1,5 +1,8 @@
 public func solution(_ A : inout [Int], _ K : Int) -> [Int] {
-    if K % A.count == 0{
+    if A.isEmpty{
+        return []
+    }
+    else if K % A.count == 0 || K == 0{
         return A
     }
     for _ in 0..<K{
