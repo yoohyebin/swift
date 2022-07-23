@@ -10,5 +10,5 @@ public func solution(_ N : Int) -> Int {
             zero_cnt = 0
         }
     }
-    return re+1 == binary.count ? 0 : re
+    return re
 }
