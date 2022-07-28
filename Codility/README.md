@@ -15,8 +15,14 @@ Lesson 3: Time Complexity
 Lesson 4: Counting Elements
 - [FrogRiverOne](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/FrogRiverOne.swift)
 - [PermCheck](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/PermCheck.swift)
+- [MaxCounters](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/MaxCounters.swift)
+- [MissingInteger](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/MissingInteger.swift)
 
 Lesson 5: Prefix Sums
+- [PassingCars](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/PassingCars.swift)
+- [CountDiv](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/CountDiv.swift)
+- [GenomicRangeQuery](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/GenomicRangeQuery.swift)
+- [MinAvgTwoSlice](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/MinAvgTwoSlice.swift)
 
 Lesson 6: Sorting
 
