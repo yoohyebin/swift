@@ -33,9 +33,7 @@ Lesson 6: Sorting
 Lesson 7: Stacks and Queues
 - [Brackets](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Brackets.swift)
 - [Fish](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Fish.swift)
-- [Nesting
-](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Nesting
-.swift)
+- [Nesting](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Nesting.swift)
 - [StoneWall](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/StoneWall.swift)
 
 Lesson 8: Leader
