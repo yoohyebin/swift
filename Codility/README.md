@@ -25,9 +25,21 @@ Lesson 5: Prefix Sums
 - [MinAvgTwoSlice](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/MinAvgTwoSlice.swift)
 
 Lesson 6: Sorting
+- [Distinct](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Distinct.swift)
+- [MaxProductOfThree](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/MaxProductOfThree.swift)
+- [Triangle](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Triangle.swift)
+- [NumberOfDiscIntersections](https://github.com/yoohyebin/swift/blob/main/Codility/Medium/NumberOfDiscIntersections.swift)
 
 Lesson 7: Stacks and Queues
+- [Brackets](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Brackets.swift)
+- [Fish](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Fish.swift)
+- [Nesting
+](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Nesting
+.swift)
+- [StoneWall](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/StoneWall.swift)
 
 Lesson 8: Leader
+- [Dominator](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/Dominator.swift)
+- [EquiLeader](https://github.com/yoohyebin/swift/blob/main/Codility/Easy/EquiLeader.swift)
 
 Lesson 9: Maximum slice problem
