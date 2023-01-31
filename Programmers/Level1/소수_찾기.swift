@@ -11,18 +11,17 @@ import Foundation
 
 //Solution 1
 func solution(_ n:Int) -> Int {
-    var count = 0
-    var arr = Array(repeating: false, count: n + 1)
-
-    for i in 2...n{
-        if arr[i] == false{
-            count += 1
-            for j in stride(from: i, to: n + 1, by: i){
-                arr[j] = true
-            }
+    var array = Array(repeating: true, count: n+1)
+    var result = 0
+    
+    for i in 2...n where array[i] == true{
+        result += 1
+        for j in stride(from: i, through: n, by: i){
+            array[j] = false
         }
     }
-  return count
+    
+    return result
 }
 
 //Solution 2
