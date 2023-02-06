@@ -4,7 +4,17 @@
 
 //Solution 1
 func solution(_ n:Int) -> String {
-    return "\(String(repeating: "수박", count: n / 2))\(n % 2 == 0 ? "" : "수")"
+    var re = ""
+    
+    for i in 1...n{
+        if i % 2 == 1{
+            re += "수"
+        }
+        else{
+            re += "박"
+        }
+    }
+    return re
 }
 
 //Solution 2
