@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Solution 1
 func solution(_ lottos:[Int], _ win_nums:[Int]) -> [Int] {
     var count = 0
     var z_count = 0
@@ -21,4 +22,12 @@ func solution(_ lottos:[Int], _ win_nums:[Int]) -> [Int] {
     }
 
     return [7 - max(count + z_count, 1),7 - max(count, 1)]
+}
+
+//Solution 2
+func solution(_ lottos:[Int], _ win_nums:[Int]) -> [Int] {
+  let zeroCount = lottos.filter { $0 == 0}.count
+  let winCount: Int = win_nums.filter { lottos.contains($0) }.count
+  
+  return [min(7-winCount-zeroCount,6), min(7-winCount,6)]
 }
