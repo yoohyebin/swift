@@ -40,23 +40,16 @@ func solution(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
     return count
 }
 
-//Solution2 => testcase 18 fail
-
+//Solution2
 func solution(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
-    var new_lost = Set(lost).subtracting(reserve)
-    var new_reserve = Set(reserve).subtracting(lost)
-    var num = n
+    let lostArray = lost.filter{!reserve.contains($0)}
+    let reserveArray = reserve.filter{!lost.contains($0)}
+    var lostCount = lostArray.count
     
-    for i in new_lost{
-        if new_reserve.contains(i+1){
-            new_reserve.remove(i+1)!
-        }
-        else if new_reserve.contains(i-1){
-            new_reserve.remove(i-1)!
-        }
-        else{
-            num -= 1
+    reserveArray.forEach { index in
+        if (lostArray.contains(index-1) || lostArray.contains(index+1)) && lostCount > 0 {
+            lostCount -= 1
         }
     }
-    return num
+    return n - lostCount
 }
