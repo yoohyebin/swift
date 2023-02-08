@@ -13,6 +13,7 @@
 
 import Foundation
 
+//Solution 1
 func solution(_ numbers:[Int], _ hand:String) -> String {
     var l = 10
     var r = 12
@@ -53,4 +54,39 @@ func solution(_ numbers:[Int], _ hand:String) -> String {
         }
     }
     return re
+}
+
+//Solution 2
+func solution(_ numbers:[Int], _ hand:String) -> String {
+    let keypad = [[3,1],[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
+    var result = ""
+    var current = [[3,0], [3,2]]
+    
+    for n in numbers{
+        if n == 1 || n == 4 || n == 7 {
+            result += "L"
+            current[0] = keypad[n]
+        }else if  n == 3 || n == 6 || n == 9 {
+            result += "R"
+            current[1] = keypad[n]
+        }else{
+            let left = abs(current[0][0]-keypad[n][0]) + abs(current[0][1]-keypad[n][1])
+            let right = abs(current[1][0]-keypad[n][0]) + abs(current[1][1]-keypad[n][1])
+            
+            if left == right{
+                let h = hand == "right" ? 1 : 0
+                result += h == 1 ? "R" : "L"
+                current[h] = keypad[n]
+            }
+            else if left > right{
+                result += "R"
+                current[1] = keypad[n]
+            }else{
+                result += "L"
+                current[0] = keypad[n]
+            }
+        }
+    }
+    
+    return result
 }
