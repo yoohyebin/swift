@@ -11,24 +11,24 @@
 import Foundation
 
 func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
-    var a = [Int]()
-    var arr = board
-    var n = 0
-
-    for i in moves{
-        for j in 0..<(arr.count){
-            if arr[j][i-1] != 0{
-                a.append(arr[j][i-1])
-                arr[j][i-1] = 0
+    var result = 0, n = board.count
+    var board = board
+    var array = [Int]()
+    
+    for move in moves {
+        for i in 0..<n{
+            if board[i][move-1] != 0{
+                if array.last == board[i][move-1]{
+                    result += 2
+                    array.removeLast()
+                }else{ 
+                  array.append(board[i][move-1])
+                }
+                board[i][move-1] = 0
                 break
             }
         }
-        if a.count >= 2, a[a.count-1] == a[a.count-2]{
-            n += 2
-            a.remove(at: a.count-1)
-            a.remove(at: a.count-1)
-        }
     }
-
-    return n
+    
+    return result
 }
