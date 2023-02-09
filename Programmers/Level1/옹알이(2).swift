@@ -37,3 +37,25 @@ func solution(_ babbling:[String]) -> Int {
     }    
     return count
 }
+
+//Solution 3
+func counting(_ word: String) -> Bool {
+	let baby = ["aya", "ye", "woo", "ma"]
+    var result = ""
+    var lastWord = ""
+    
+    for w in word.map { String($0) } {
+        result += w
+    
+        if baby.contains(result) && result != lastWord {
+            lastWord = result
+            result = ""
+        }
+
+    }
+    return result.isEmpty
+}
+
+func solution(_ babbling:[String]) -> Int {
+    return babbling.map { counting($0) }.filter { $0 }.count
+}
