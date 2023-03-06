@@ -11,20 +11,16 @@
 import Foundation
 
 //Solution 1
-func solution(_ n:Int) -> Int
-{
-    var answer: Int = n+1
-    let n_one = String(n, radix: 2).map{$0}.filter{$0 == "1"}.count
-
-    while true{
-        let one = String(answer,radix: 2).map{$0}.filter{$0 == "1"}.count
-        if n_one == one{
-            break
+func solution(_ n:Int) -> Int {
+    var one_cnt = String(n, radix: 2).filter{$0 == "1"}.count
+    var result = n+1
+    
+    while true {
+        if one_cnt == String(result, radix: 2).filter{$0 == "1"}.count {
+            return result
         }
-        answer += 1
+        result += 1
     }
-
-    return answer
 }
 
 //Solution 2
