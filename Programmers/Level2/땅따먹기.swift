@@ -6,6 +6,7 @@
 
 import Foundation
 
+//Solution 1
 func solution(_ land:[[Int]]) -> Int{
     var land = land
 
@@ -26,4 +27,18 @@ func solution(_ land:[[Int]]) -> Int{
     }
 
     return land.last!.max()!
+}
+
+//Solution 2
+func solution(_ land:[[Int]]) -> Int{
+    var new_land = land
+
+    for i in 1..<new_land.count {
+        new_land[i][0] += max(new_land[i-1][1], new_land[i-1][2], new_land[i-1][3])
+        new_land[i][1] += max(new_land[i-1][0], new_land[i-1][2], new_land[i-1][3])
+        new_land[i][2] += max(new_land[i-1][0], new_land[i-1][1], new_land[i-1][3])
+        new_land[i][3] += max(new_land[i-1][0], new_land[i-1][1], new_land[i-1][2])
+    }
+
+    return new_land.last!.max()!
 }
