@@ -1,7 +1,7 @@
 [코딩테스트 대비 문제집 with Baekjoon](https://github.com/tony9402/baekjoon)의 문제집 풀이
 
-[1. 자료구조(Data Structure)](Data_Structure)
-[2. 자료구조 2(Data Structure 2)](Data_Structure)
+1.[1. 자료구조(Data Structure)](Data_Structure)
+2.[2. 자료구조 2(Data Structure 2)](Data_Structure)
 [3. 트리(Tree)](Data_Structure)
 [4. 수학(Math)](Data_Structure)
 [5. 탐욕법(Greedy)](Data_Structure)
